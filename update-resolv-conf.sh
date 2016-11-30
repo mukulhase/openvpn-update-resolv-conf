@@ -53,7 +53,7 @@ up)
 "
   done
   #echo -n "$R" | $RESOLVCONF -x -p -a "${dev}"
-  echo -n "$R" | $RESOLVCONF -x -a "${dev}.inet"
+  echo -n "$R" | $RESOLVCONF -a "${dev}.inet"
   ;;
 down)
   $RESOLVCONF -d "${dev}.inet"
